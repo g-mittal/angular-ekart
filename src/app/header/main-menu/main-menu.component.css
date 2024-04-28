@@ -7,4 +7,10 @@
     font-size: 14px;
     width:70%;
     text-align: center;
+    display: flex;
+}
+a{
+    /* display: block; */
+    /* vertical-align: middle; */
+    text-wrap: nowrap;
 }

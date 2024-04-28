@@ -1,0 +1,12 @@
+<app-filter 
+    [all]="totalProductCount" 
+    [inStock]="totalProductInStock" 
+    [outOfStock]="totalProductOutOfStock"
+>
+</app-filter>
+
+<div class="ekart--products--container">
+    @for (product of products; track $index) {
+        <app-product [product]="product"></app-product>
+    }
+</div>
