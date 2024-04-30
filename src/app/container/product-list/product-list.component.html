@@ -2,11 +2,14 @@
     [all]="totalProductCount" 
     [inStock]="totalProductInStock" 
     [outOfStock]="totalProductOutOfStock"
+    (selectedFilterRadioButtonChanged)="onFilterChanged($event)"
 >
 </app-filter>
 
 <div class="ekart--products--container">
     @for (product of products; track $index) {
-        <app-product [product]="product"></app-product>
+        @if (selectedFilterRadioButton === 'all' || selectedFilterRadioButton === product.is_in_inventory.toString()) {
+            <app-product [product]="product"></app-product>
+        }
     }
 </div>
