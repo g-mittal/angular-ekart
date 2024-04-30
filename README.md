@@ -28,3 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 custom event binding - for child to parent
 custom property binding - for parent to child
+
+template reference variable - 
+if we click button and want to pass data from input tag, we create template reference variable
+eg - #searchInput in search.component.html
