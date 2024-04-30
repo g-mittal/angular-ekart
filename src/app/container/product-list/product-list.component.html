@@ -8,7 +8,10 @@
 
 <div class="ekart--products--container">
     @for (product of products; track $index) {
-        @if (selectedFilterRadioButton === 'all' || selectedFilterRadioButton === product.is_in_inventory.toString()) {
+        <!-- @if (selectedFilterRadioButton === 'all' || selectedFilterRadioButton === product.is_in_inventory.toString()) {
+            <app-product [product]="product"></app-product>
+        } -->
+        @if (product.name.toLowerCase().includes(searchTextProp.toLowerCase())) {
             <app-product [product]="product"></app-product>
         }
     }

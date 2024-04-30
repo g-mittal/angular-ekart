@@ -11,6 +11,13 @@ import { ProductListComponent } from './product-list/product-list.component';
 })
 export class ContainerComponent {
 
+  searchText: string = '';
+
+  setSearchText(value: string) {
+    this.searchText = value;
+    // console.log(this.searchText);
+  }
+
   // listOfString: string[] = ['Jim', 'Kane', 'Shaun']
 
   // name = "John Doe";
