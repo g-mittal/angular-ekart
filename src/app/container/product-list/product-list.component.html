@@ -12,7 +12,7 @@
             <app-product [product]="product"></app-product>
         } -->
         @if (product.name.toLowerCase().includes(searchTextProp.toLowerCase())) {
-            <app-product [product]="product"></app-product>
+            <app-product [product]="product" (click)="selectedProduct = product"></app-product>
         }
     }
 </div>

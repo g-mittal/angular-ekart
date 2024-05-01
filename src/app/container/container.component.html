@@ -2,7 +2,11 @@
 
     <app-search (searchTextChanged)="setSearchText($event)"></app-search>
 
-    <product-list [searchTextProp]="searchText"></product-list>
+    <product-list [searchTextProp]="searchText" #productListComponentRefVar></product-list>
+
+    @if (productListComponentRefVar.selectedProduct) {
+        <product-detail></product-detail>
+    }
 
     <!-- @for (item of listOfString; track $index) {
         <div>
