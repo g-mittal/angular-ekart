@@ -32,3 +32,13 @@ custom property binding - for parent to child
 template reference variable - 
 if we click button and want to pass data from input tag, we create template reference variable
 eg - #searchInput in search.component.html
+
+template reference variable for component
+in container.component.html,
+productListComponentRefVar is the reference variable for product-list component
+we access properties of product-list.component.ts in container html
+
+viewChild()
+in search.component.html,
+we access searchInput template reference variable only when updateSearchText() is called ie when search button is clicked
+but we want to access searchInput as soon as searchInput loads 
