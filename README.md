@@ -42,3 +42,6 @@ viewChild()
 in search.component.html,
 we access searchInput template reference variable only when updateSearchText() is called ie when search button is clicked
 but we want to access searchInput as soon as searchInput loads 
+
+In container.component.ts, 
+productListComponent stores reference to product-list with help of viewChild()

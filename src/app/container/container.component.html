@@ -5,7 +5,7 @@
     <product-list [searchTextProp]="searchText" #productListComponentRefVar></product-list>
 
     @if (productListComponentRefVar.selectedProduct) {
-        <product-detail></product-detail>
+        <product-detail [productListComp]="productListComponentRefVar"></product-detail>
     }
 
     <!-- @for (item of listOfString; track $index) {
